@@ -36,7 +36,7 @@ def show_phone(args, contacts):
     if name in contacts:
         return contacts[name]
     else:
-        raise KeyError
+        raise ValueError
 
   
 def show_all(contacts):
@@ -69,6 +69,7 @@ def main():
             show_all(contacts)       
         else:
             print("Invalid command.")
+            
 
 if __name__ == "__main__":
     main()
