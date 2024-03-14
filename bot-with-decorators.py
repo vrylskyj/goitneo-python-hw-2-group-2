@@ -45,7 +45,7 @@ def show_all(contacts):
     else:
         for name, phone in contacts.items():
             print(f"{name}: {phone}")
-            #
+            
             
 
 def main():
